@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(MyNewsApp());
 
@@ -7,7 +8,10 @@ class MyNewsApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'News UI',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme),
+      ),
       home: NewsHomePage(),
       debugShowCheckedModeBanner: false,
     );
@@ -35,10 +39,12 @@ class NewsHomePage extends StatelessWidget {
             children: [
               Text(
                 "What’s New",
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24,
+                ),
               ),
               SizedBox(height: 12),
-              //feeuillemort
               Container(
                 height: 200,
                 decoration: BoxDecoration(
@@ -52,13 +58,25 @@ class NewsHomePage extends StatelessWidget {
                 padding: EdgeInsets.all(12),
                 child: Text(
                   "Brexit talks continue into the night as talks plagued by delays",
-                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                  style: 
+                  GoogleFonts.poppins(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                    color: Colors.white,
+                  )
                 ),
               ),
               SizedBox(height: 16),
               Row(
                 children: [
-                  Text("Recommend", style: TextStyle(fontWeight: FontWeight.bold)),
+                  Text(
+                    "Recommend",
+                    style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.w700,
+                      fontSize: 16,
+                      color: Colors.black,
+                    ),
+                  ),
                   SizedBox(width: 12),
                   Text("Popular", style: TextStyle(color: Colors.grey)),
                   SizedBox(width: 12),
@@ -71,7 +89,8 @@ class NewsHomePage extends StatelessWidget {
                   children: [
                     NewsItem(
                       image: "assets/4.jpeg",
-                      title: "US makes China’s diplomats say where they’re going",
+                      title:
+                          "US makes China’s diplomats say where they’re going",
                       time: "1 hour ago",
                       views: "532",
                     ),
@@ -126,15 +145,26 @@ class NewsItem extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(title, style: TextStyle(fontWeight: FontWeight.bold)),
+                Text(title, style: GoogleFonts.poppins(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.black,
+                ),
+                ),
                 SizedBox(height: 4),
                 Row(
                   children: [
-                    Text(time, style: TextStyle(color: Colors.grey, fontSize: 12)),
+                    Text(
+                      time,
+                      style: TextStyle(color: Colors.grey, fontSize: 12),
+                    ),
                     SizedBox(width: 8),
                     Icon(Icons.remove_red_eye, size: 14, color: Colors.grey),
                     SizedBox(width: 4),
-                    Text(views, style: TextStyle(color: Colors.grey, fontSize: 12)),
+                    Text(
+                      views,
+                      style: TextStyle(color: Colors.grey, fontSize: 12),
+                    ),
                   ],
                 ),
               ],
