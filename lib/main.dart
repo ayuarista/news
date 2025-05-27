@@ -86,7 +86,8 @@ class NewsHomePage extends StatelessWidget {
               ),
               SizedBox(height: 16),
               Expanded(
-                child: ListView(
+                child: 
+                ListView(
                   children: [
                     NewsItem(
                       image: "assets/4.jpeg",
@@ -119,59 +120,58 @@ class NewsHomePage extends StatelessWidget {
 }
 
 class NewsItem extends StatelessWidget {
-  final String image;
   final String title;
+  final String image;
   final String time;
   final String views;
 
-  const NewsItem({
-    required this.image,
-    required this.title,
-    required this.time,
-    required this.views,
-  });
+  const NewsItem({required this.title, required this.image, required this.time, required this.views});
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8),
-      child: Row(
-        children: [
-          ClipRRect(
-            borderRadius: BorderRadius.circular(8),
-            child: Image.asset(image, width: 80, height: 80, fit: BoxFit.cover),
-          ),
-          SizedBox(width: 12),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(title, style: GoogleFonts.poppins(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w600,
-                  color: Colors.black,
-                ),
-                ),
-                SizedBox(height: 4),
-                Row(
-                  children: [
-                    Text(
-                      time,
-                      style: TextStyle(color: Colors.grey, fontSize: 12),
-                    ),
-                    SizedBox(width: 8),
-                    Icon(Icons.remove_red_eye, size: 14, color: Colors.grey),
-                    SizedBox(width: 4),
-                    Text(
-                      views,
-                      style: TextStyle(color: Colors.grey, fontSize: 12),
-                    ),
-                  ],
-                ),
-              ],
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => NewsDetailPage(
+              title: title,
+              image: image,
+              time: time,
+              views: views,
             ),
           ),
-        ],
+        );
+      },
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 8),
+        child: Row(
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.circular(8),
+              child: Image.asset(image, width: 80, height: 80, fit: BoxFit.cover),
+            ),
+            SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(title, style: TextStyle(fontWeight: FontWeight.bold)),
+                  SizedBox(height: 4),
+                  Row(
+                    children: [
+                      Text(time, style: TextStyle(color: Colors.grey, fontSize: 12)),
+                      SizedBox(width: 8),
+                      Icon(Icons.remove_red_eye, size: 14, color: Colors.grey),
+                      SizedBox(width: 4),
+                      Text(views, style: TextStyle(color: Colors.grey, fontSize: 12)),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
