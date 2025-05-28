@@ -70,7 +70,6 @@ class NewsDetailPage extends StatelessWidget{
                       "The teams worked into the night and continue to make progress. They will meet again this morning.",
                       style: TextStyle(height: 1.5),
                     ),
-                    // Tambahkan lebih banyak paragraf jika diperlukan
                   ],
                 ),
               ),
