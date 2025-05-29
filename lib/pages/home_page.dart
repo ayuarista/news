@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:news/data/news_data.dart';
+import 'package:news/pages/news_detail_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

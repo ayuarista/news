@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:news/pages/home_page.dart';
+import 'package:news/pages/profile_page.dart';
 void main() {
   runApp(const MyApp());
 }
