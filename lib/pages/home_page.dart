@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:flutter_news_app/data/news_data.dart';
-import 'package:flutter_news_app/pages/news_detail_page.dart';
+import 'package:news/data/news_data.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -35,7 +34,7 @@ class _HomePageState extends State<HomePage> {
                     const CircleAvatar(
                       radius: 24,
                       backgroundImage: NetworkImage(
-                        'https://randomuser.me/api/portraits/men/32.jpg',
+                        'https://i.pinimg.com/736x/56/9b/ef/569befae4cc0ecea11113875f147bdcf.jpg',
                       ),
                     ),
                     const SizedBox(width: 12),
