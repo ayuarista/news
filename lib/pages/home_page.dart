@@ -34,8 +34,8 @@ class _HomePageState extends State<HomePage> {
                   children: [
                     const CircleAvatar(
                       radius: 24,
-                      backgroundImage: NetworkImage(
-                        'https://i.pinimg.com/736x/56/9b/ef/569befae4cc0ecea11113875f147bdcf.jpg',
+                      backgroundImage: AssetImage(
+                        'assets/profilee.jpg',
                       ),
                     ),
                     const SizedBox(width: 12),
