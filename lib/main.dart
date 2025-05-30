@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:news/pages/home_page.dart';
 import 'package:news/pages/profile_page.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -24,10 +25,7 @@ class _MyAppState extends State<MyApp> {
 
   int _selectedIndex = 0;
 
-  final List<Widget> _pages = [
-    const HomePage(),
-    const ProfilePage(),
-  ];
+  final List<Widget> _pages = [const HomePage(), const ProfilePage()];
 
   @override
   Widget build(BuildContext context) {
@@ -46,19 +44,19 @@ class _MyAppState extends State<MyApp> {
           selectedItemColor: Colors.indigo,
           unselectedItemColor: Colors.grey,
           items: const [
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: 'Home',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.person),
-              label: 'Profile',
-            ),
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
           ],
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: toggleTheme,
-          child: Icon(isDarkMode ? Icons.wb_sunny : Icons.nightlight_round),
+          shape: const CircleBorder(),
+          backgroundColor:
+              isDarkMode ? Colors.indigo : Colors.indigo,
+          child: Icon(
+            isDarkMode ? Icons.nightlight_round : Icons.wb_sunny,
+            color: Colors.indigo[100],
+          ),
         ),
       ),
     );

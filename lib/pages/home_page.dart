@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
         ? newsData
         : newsData.where((news) => news['category'] == selectedCategory).toList();
 
-    return SafeArea(
+    return SafeArea(  
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
                 Row(
                   children: [
                     const CircleAvatar(
-                      radius: 24,
+                      radius: 20,
                       backgroundImage: AssetImage(
                         'assets/profilee.jpg',
                       ),
@@ -42,7 +42,7 @@ class _HomePageState extends State<HomePage> {
                     Text(
                       'Hi, Kim Jaewon',
                       style: GoogleFonts.dmSans(
-                        fontSize: 16,
+                        fontSize: 15,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
