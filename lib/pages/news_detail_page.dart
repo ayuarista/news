@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class NewsDetailPage extends StatelessWidget {
   final Map<String, dynamic> news;
-
+  
   const NewsDetailPage({super.key, required this.news});
 
   @override
@@ -75,6 +75,7 @@ class NewsDetailPage extends StatelessWidget {
                       Text(
                         news['content'],
                         style: GoogleFonts.dmSans(fontSize: 14),
+                        selectionColor: Colors.grey,
                         textAlign: TextAlign.justify,
                       ),
                     ],

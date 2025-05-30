@@ -117,7 +117,7 @@ class _HomePageState extends State<HomePage> {
                           Text(
                             news['title'],
                             style: GoogleFonts.dmSans(
-                              fontSize: 18,
+                              fontSize: 16,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
