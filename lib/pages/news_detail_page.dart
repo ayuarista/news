@@ -64,7 +64,8 @@ class NewsDetailPage extends StatelessWidget {
                       const SizedBox(height: 16),
                       Text(
                         news['content'],
-                        style: GoogleFonts.dmSans(fontSize: 16),
+                        style: GoogleFonts.dmSans(fontSize: 14), 
+                        textAlign: TextAlign.justify,
                       ),
                     ],
                   ),

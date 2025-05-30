@@ -1,13 +1,13 @@
 final List<Map<String, dynamic>> newsData = [
   {
     'id': 1,
-    'title': 'Contact Lost With Sriwijaya Air Boeing 737-500 After Take Off',
+    'title': 'Plane carrying Liberian president involved in landing scare',
     'image': 'https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    'author': 'John Smith',
-    'date': '10 Jan, 2021',
+    'author': 'Wycliffe Muia',
+    'date': '30 May, 2025',
     'category': 'International',
     'content':
-        'An Indonesian passenger plane carrying 62 people lost contact with air traffic controllers shortly after takeoff... (Full news content for detail page)',
+        "Flights were temporarily disrupted at Liberia main airport on Thursday night after a private jet carrying President Joseph Boakai almost crashed while landing. Part of the presidential jet's landing gear malfunctioned while approaching the runway, causing a rough landing, airport authorities said. The incident, which sparked panic at the airport, forced the cancellation of all scheduled flights for the night, local media reported. President Boakai, who was returning from a trip in Nigeria with his entourage, was safely evacuated unharmed, as authorities announced an investigation.",
   },
   {
     'id': 2,
