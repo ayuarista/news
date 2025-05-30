@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
                       'Hi, Kim Jaewon',
                       style: GoogleFonts.dmSans(
                         fontSize: 16,
-                        fontWeight: FontWeight.w500,
+                        fontWeight: FontWeight.w600,
                       ),
                     ),
                   ],

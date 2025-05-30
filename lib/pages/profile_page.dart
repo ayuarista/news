@@ -44,9 +44,9 @@ class ProfilePage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                _buildStat('2h 30m', 'Total time'),
-                _buildStat('7200 cal', 'Burned'),
-                _buildStat('2', 'Done'),
+                _buildStat('10h 30m', 'Total time'),
+                _buildStat('10', 'Read News'),
+                _buildStat('2', 'Publish News'),
               ],
             ),
             const SizedBox(height: 32),
