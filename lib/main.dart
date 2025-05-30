@@ -52,10 +52,10 @@ class _MyAppState extends State<MyApp> {
           onPressed: toggleTheme,
           shape: const CircleBorder(),
           backgroundColor:
-              isDarkMode ? Colors.indigo : Colors.indigo,
+              isDarkMode ? Colors.indigo : Colors.indigo[500],
           child: Icon(
             isDarkMode ? Icons.nightlight_round : Icons.wb_sunny,
-            color: Colors.indigo[100],
+            color: isDarkMode ? Colors.indigo[100] : Colors.white,
           ),
         ),
       ),

@@ -40,10 +40,10 @@ class _HomePageState extends State<HomePage> {
                     ),
                     const SizedBox(width: 12),
                     Text(
-                      'Hi, Kim Jaewon',
+                      'Hi, Kim Jaewon!',
                       style: GoogleFonts.dmSans(
                         fontSize: 15,
-                        fontWeight: FontWeight.w600,
+                        fontWeight: FontWeight.w800,
                       ),
                     ),
                   ],

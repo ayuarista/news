@@ -54,17 +54,27 @@ class NewsDetailPage extends StatelessWidget {
                         children: [
                           Icon(Icons.person, size: 16, color: Colors.grey),
                           const SizedBox(width: 4),
-                          Text(news['author'], style: GoogleFonts.dmSans(fontSize: 12)),
+                          Text(
+                            news['author'],
+                            style: GoogleFonts.dmSans(fontSize: 12),
+                          ),
                           const SizedBox(width: 12),
-                          Icon(Icons.calendar_today, size: 16, color: Colors.grey),
+                          Icon(
+                            Icons.calendar_today,
+                            size: 16,
+                            color: Colors.grey,
+                          ),
                           const SizedBox(width: 4),
-                          Text(news['date'], style: GoogleFonts.dmSans(fontSize: 12)),
+                          Text(
+                            news['date'],
+                            style: GoogleFonts.dmSans(fontSize: 12),
+                          ),
                         ],
                       ),
                       const SizedBox(height: 16),
                       Text(
                         news['content'],
-                        style: GoogleFonts.dmSans(fontSize: 14), 
+                        style: GoogleFonts.dmSans(fontSize: 14),
                         textAlign: TextAlign.justify,
                       ),
                     ],
