@@ -57,6 +57,6 @@ final List<Map<String, dynamic>> newsData = [
     'date': '20 Nov, 2022',
     'category': 'Magazine',
     'content':
-        "Flights were temporarily disrupted at Liberia main airport on Thursday night after a private jet carrying President Joseph Boakai almost crashed while landing. Part of the presidential jet's landing gear malfunctioned while approaching the runway, causing a rough landing, airport authorities said. The incident, which sparked panic at the airport, forced the cancellation of all scheduled flights for the night, local media reported. President Boakai, who was returning from a trip in Nigeria with his entourage, was safely evacuated unharmed, as authorities announced an investigation.",
+        "Flights were at Liberia main airport on Thursday night after a private jet carrying President Joseph Boakai almost crashed while landing. Part of the presidential jet's landing gear malfunctioned while approaching the runway, causing a rough landing, airport authorities said. The incident, which sparked panic at the airport, forced the cancellation of all scheduled flights for the night, local media reported. President Boakai, who was returning from a trip in Nigeria with his entourage, was safely evacuated unharmed, as authorities announced an investigation.",
   },
 ];
